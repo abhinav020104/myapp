@@ -10,7 +10,6 @@ app.use(express.json());
 app.use(cors());
 app.get("/" , async(req , res)=>{
     res.send("You landed on a test page !");
-    await User.create({FirstName : "Abhinav"  , LastName:"Arora" , MobileNumber:"7878928409"})
 })
 app.post("/search" , async(req , res)=>{
     console.log(req.body);
