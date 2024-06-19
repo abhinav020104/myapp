@@ -18,7 +18,7 @@ const Search = () => {
             console.log(SearchData);
             const response = await axios({
                 method:"post",
-                url:"https://myapp-zae8.onrender.com",
+                url:"https://myapp-zae8.onrender.com/search",
                 data:SearchData,
             })
             console.log(response.data.data);
